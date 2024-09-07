@@ -161,8 +161,35 @@
   font-size: 14px;
   background-color: #DD1C45;
 }
+.hero-btn:hover{
+  background: linear-gradient(180deg, rgba(255,223,115,1) 0%, rgba(255,115,66,1) 60%);
+}
 /* ---------------------hero-section-End-------------------------- */
 /* ---------------------Header-Section-End-------------------------- */
+/* ---------------------Main-Section-Start-------------------------- */
+.about-section{
+
+}
+.about-decs{
+  font-size: 15px;
+  color: #6A6A6A;
+  line-height: 24px;
+}
+.about-contact hr{
+  width: 50%;
+}
+.about-contact h6{
+  font-size: 13px;
+}
+.toll-free-number h6{
+  font-size: 18px;
+  color: #6A6A6A;
+}
+.about-contact-number strong:hover{
+  color: #c18f59;
+}
+/* ---------------------Main-Section-End-------------------------- */
+
 /* ---------------------Footer-Section-Start-------------------------- */
 footer{
   background-image: url('../assets/img/footer-background.jpg');
@@ -217,3 +244,4 @@ footer .contact-details p{
   color: #c18f59;
 }
 /* ---------------------Footer-Section-End-------------------------- */
+
