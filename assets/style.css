@@ -1,0 +1,65 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none !important;
+  }
+  /* ---------------------Google-fonts-Css-Start-------------------------- */
+  .roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+ /* ---------------------Google-fonts-End-------------------------- */ 
+ /* ---------------------Common-Css-Start-------------------------- */ 
+  
+ /* ---------------------Common-Css-End-------------------------- */
+
+ /* ---------------------Header-Section-Start-------------------------- */
+ .header-logo-area{
+  background-color: #E8E8E8;
+ }
+ .header-icon-img{
+  max-width: 25px;
+  height: 25px;
+ }
+ .hours{
+  color: #ac0000;
+  font-size: 27px;
+  margin: 2px 0 0 17px;
+ }
+ .day{
+  color: #ac0000;
+  font-size: 13px;
+ }
+ .contact-number{
+  color: #ac0000;
+  font-size: 27px;
+  margin: 2px 0 0 17px;
+ }
+ .direct-contact-text{
+  color: #ac0000;
+  font-size: 13px;
+ }
+
+ /* ---------------------Header-Section-End-------------------------- */
