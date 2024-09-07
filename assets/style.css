@@ -61,5 +61,27 @@
   color: #ac0000;
   font-size: 13px;
  }
+ .bi{
+  font-size: 26px;
+ }
+ .bi-facebook{
+  color: #0a7fdb;
+ }
+ .bi-twitter{
+  color: #0a7fdb;
+ }
+ .bi-youtube{
+  color: #cd0101;
+ }
+ .bi-search{
+  color: #f4f4f4;
+ }
+ .search{
+  color: white;
+  font-size: 13px;
+ }
+ .bi:hover{
+  color: #c18f59;
+ }
 
  /* ---------------------Header-Section-End-------------------------- */
