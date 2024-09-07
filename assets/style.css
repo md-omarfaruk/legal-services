@@ -128,3 +128,57 @@
 
 /* ---------------------Navbar-End-------------------------- */
 /* ---------------------Header-Section-End-------------------------- */
+/* ---------------------Footer-Section-Start-------------------------- */
+footer{
+  background-image: url('../assets/img/footer-background.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.footer-desc{
+  color: #bcbcbc;
+  font-size: 13px;
+}
+.footer-social-links .bi{
+color: white;
+  font-size: 23px;
+ 
+}
+.footer-social-links a{
+  margin-bottom: 8px;
+}
+.footer-social-links h6{
+  color: white;
+  font-size: 13px;
+}
+footer .border-end{
+  border-color: #bcbcbc !important;
+}
+.footer-contact{
+  font-size: 16px;
+}
+.bi-paperclip{
+  font-size: 24px;
+  color: #c18f59;
+}
+footer .contact-details p{
+  color: #bcbcbc;
+  font-size: 13px;
+}
+.footer-video-title{
+  font-size: 18px;
+}
+.footer-office-address{
+  font-size: 14px;
+}
+.copyright-text{
+  background-color: #141414;
+}
+.copyright-text p{
+  color: #bcbcbc;
+  font-size: 13px;
+}
+.copyright-color-text{
+  color: #c18f59;
+}
+/* ---------------------Footer-Section-End-------------------------- */
