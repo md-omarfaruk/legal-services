@@ -7,7 +7,6 @@ function scrollFunction() {
     document.getElementById("header-navbar-two").style.position = "fixed";
     document.getElementById("header-navbar-two").style.top = "0px";
     document.getElementById("header-navbar-two").style.left = "0px";
-    document.getElementById("header-navbar-two").style.transition-duration = 1000;
 
   } else {
     document.getElementById("header-navbar-two").style.display = "none";
@@ -17,7 +16,3 @@ function scrollFunction() {
 }
 
 // -----------------------------jQuery-Animations--------------------------------
-
-$(document).ready(function(){
-      $("#slidUpSlowAnimate").slideUp("slow");
-  });

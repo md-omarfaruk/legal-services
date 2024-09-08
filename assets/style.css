@@ -115,13 +115,17 @@
   color: white;
   border-bottom: 3px solid #c18f59;
 }
+.nav-item i{
+  margin-top: 27px;
+}
 .nav-link {
   color: white;
   font-size: 14px;
-  padding: 22px 0px;
+  padding: 22px 0 22px 0;
 }
 .nav-link:hover{
   color: white;
+  font-size: 14px;
   border-bottom: 3px solid #AA4D4D;
 }
 .bi-star-fill{
