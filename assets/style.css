@@ -133,6 +133,7 @@
 #header-navbar-two{
   background-color: #850000;
   display: none;
+  width: 100%;
 }
 /* ---------------------Fixed-Navbar-End-------------------------- */
 /* ---------------------Navbar-End-------------------------- */
@@ -179,8 +180,8 @@
 /* ---------------------hero-section-End-------------------------- */
 /* ---------------------Header-Section-End-------------------------- */
 /* ---------------------Main-Section-Start-------------------------- */
-.about-section{
-
+.about-myself{
+  padding-left: 30px;
 }
 .about-decs{
   font-size: 15px;
@@ -323,6 +324,11 @@ footer .contact-details p{
   .responsive-hero-text h1{
     font-size: 60px;
     margin-top: 25px;
+  }
+  .about-myself{
+    margin-top: 48px;
+  padding: 0 12px;
+
   }
   .about-section .about-decs p.about-decs{
     padding-top: 10px;
