@@ -173,6 +173,9 @@
 .hero-btn:hover{
   background: linear-gradient(180deg, rgba(255,223,115,1) 0%, rgba(255,115,66,1) 60%);
 }
+.responsive-hero-text{
+  display: none;
+}
 /* ---------------------hero-section-End-------------------------- */
 /* ---------------------Header-Section-End-------------------------- */
 /* ---------------------Main-Section-Start-------------------------- */
@@ -278,10 +281,70 @@ footer .contact-details p{
   .responsive-logo{
     display: inline;
   }
-
-
+  .hero-section {
+    padding: 10px 0 80px 0;
+  }
+  .hero-text{
+    display: none;
+  }
+  .hero-section .col-lg-12{
+    padding: 0;
+  }
+  .responsive-hero-text{
+    display: inline;
+  }
+  .responsive-hero-text h3{
+    font-size: 66px;
+  }
+  .responsive-hero-text h1{
+    font-size: 66px;
+    margin-top: 25px;
+  } .responsive-hero-text h3{
+    font-size: 60px;
+  }
+  .responsive-hero-text h1{
+    font-size: 60px;
+    margin-top: 25px;
+  }
+  .about-section .about-decs p.about-decs{
+    padding-top: 10px;
+  }
+  .about-contact-number{
+    margin-bottom: 15px;
+  }
+  .my-3 {
+    margin-top: 0 !important;
+    margin-bottom: 8px !important;
+  }
 }
 
+
+@media (max-width: 767.98px) {
+  .hero-text{
+    display: inline;
+  }
+  .responsive-hero-text{
+    display: none;
+  }
+  .hero-text h3{
+    font-size: 40px;
+  }
+  .hero-text h1{
+    font-size: 40px;
+    margin-top: 0;
+  }
+  .services p {
+    font-size: 13px;
+}
+.my-3 {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+.toll-free-number h6 {
+  font-size: 15px;
+}
+
+}
 
 /* ---------------------Media-Query-Css-End-------------------------- */
 
