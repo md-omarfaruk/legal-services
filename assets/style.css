@@ -263,6 +263,22 @@ footer .contact-details p{
   left: 2%;
   bottom: 5%;
 }
+.home-btn{
+  right: 2%;
+  bottom: 5%;
+}
+.bi-arrow-up-short{
+  color: #c18f59;
+  background-color: #ffffff;
+  padding: 8px 10px;
+  font-size: 20px;
+}
+.bi-arrow-up-short:hover{
+  color: #ffffff;
+  background-color: #c18f59;
+  padding: 8px 10px;
+  font-size: 20px;
+}
 /* ---------------------Footer-Section-End-------------------------- */
 
 /* ---------------------Media-Query-Css-Start-------------------------- */
