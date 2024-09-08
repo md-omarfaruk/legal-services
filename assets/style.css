@@ -243,9 +243,11 @@ footer .contact-details p{
 .copyright-color-text{
   color: #c18f59;
 }
-.whats-app-sticky-btn{
+.whats-app-btn{
   background-color: #25d366;
   font-size: 18px;
+  left: 2%;
+  bottom: 5%;
 }
 /* ---------------------Footer-Section-End-------------------------- */
 
