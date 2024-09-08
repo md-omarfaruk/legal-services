@@ -108,6 +108,9 @@
 .header-nav {
   background-color: #850000;
 }
+.responsive-logo{
+  display: none;
+}
 .navbar-nav .nav-link.active{
   color: white;
   border-bottom: 3px solid #c18f59;
@@ -256,4 +259,29 @@ footer .contact-details p{
   bottom: 5%;
 }
 /* ---------------------Footer-Section-End-------------------------- */
+
+/* ---------------------Media-Query-Css-Start-------------------------- */
+@media (max-width: 991.98px) {
+  .header-logo-area{
+    display: none;
+  }
+  .header-nav {
+    background-color: #353C4E;
+  }
+  .container-lg{
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .navbar-toggler{
+    color: #c18f59;
+  }
+  .responsive-logo{
+    display: inline;
+  }
+
+
+}
+
+
+/* ---------------------Media-Query-Css-End-------------------------- */
 
