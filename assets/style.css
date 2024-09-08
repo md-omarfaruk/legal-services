@@ -304,6 +304,9 @@ footer .contact-details p{
   .responsive-logo{
     display: inline;
   }
+  /* #header-navbar-two{
+    display: none;
+  } */
   .hero-section {
     padding: 10px 0 80px 0;
   }
@@ -351,6 +354,9 @@ footer .contact-details p{
 
 
 @media (max-width: 767.98px) {
+  /* #header-navbar-two{
+    display: none;
+  } */
   .hero-text{
     display: inline;
   }
