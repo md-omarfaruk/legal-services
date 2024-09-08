@@ -131,8 +131,8 @@
 
 /* ---------------------Fixed-Navbar-Start-------------------------- */
 .header-fixed-nav{
-  background-color: #850000;
-  display: none;
+  background-color: #850000 !important;
+  display: inline;
 }
 /* ---------------------Fixed-Navbar-End-------------------------- */
 /* ---------------------Navbar-End-------------------------- */
