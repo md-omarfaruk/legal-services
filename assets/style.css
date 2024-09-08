@@ -130,9 +130,9 @@
 }
 
 /* ---------------------Fixed-Navbar-Start-------------------------- */
-.header-fixed-nav{
-  background-color: #850000 !important;
-  display: inline;
+#header-navbar-two{
+  background-color: #850000;
+  display: none;
 }
 /* ---------------------Fixed-Navbar-End-------------------------- */
 /* ---------------------Navbar-End-------------------------- */
