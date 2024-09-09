@@ -25,9 +25,3 @@ function scrollFunction() {
 //    element.classList.add("fadeInUp");
 //   });
 
-
-//   ------------------------------jQuery-For-Animation--------------------------------
-
-$(document).ready(function(){
-    $("#fadeInUp").fadeIn(2000);
-});

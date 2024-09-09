@@ -288,11 +288,8 @@ footer .contact-details p{
   font-size: 20px;
 }
 /* ---------------------Footer-Section-End-------------------------- */
-.fadeIn{
-  display: none;
-}
 /* ---------------------------Animations-Css-Start---------------------- */
-/* .fadeInUp {
+.fadeInUp {
   -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp;
   -webkit-animation-duration: 1s;
@@ -325,7 +322,7 @@ footer .contact-details p{
   }
   }
 
-    */
+   
 
     .fadeInRightLate {
       -webkit-animation-name: fadeInRight;
