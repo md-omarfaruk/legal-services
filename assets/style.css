@@ -118,7 +118,7 @@
 .nav-item i{
   margin-top: 27px;
 }
-.nav-link {
+.nav-link,.dropdown {
   color: white;
   font-size: 14px;
   padding: 22px 0 22px 0;
@@ -132,7 +132,24 @@
   font-size: 7px;
   color: #c18f59;
 }
-
+.dropdown:hover{
+  border-bottom: 3px solid #AA4D4D;
+}
+.dropdown-menu{
+  top: 67px;
+  padding: 8px 35px 8px 8px;
+  background-color: #141414;
+}
+.dropdown-item{
+  color: #ffffff;
+  background-color: inherit !important;
+}
+.dropdown-item:hover{
+  color: #c18f59;
+}
+.dropdown:hover > .dropdown-menu {
+	display:inherit;
+}
 /* ---------------------Fixed-Navbar-Start-------------------------- */
 #header-navbar-two{
   background-color: #850000;
