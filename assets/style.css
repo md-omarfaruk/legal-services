@@ -252,6 +252,9 @@ footer .contact-details p{
 .footer-office-address{
   font-size: 14px;
 }
+.introduce-video{
+  margin-top: 14px;
+  }
 .copyright-text{
   background-color: #141414;
 }
@@ -386,8 +389,11 @@ footer .contact-details p{
 .toll-free-number h6 {
   font-size: 15px;
 }
-.introduce-video{
+.introduce{
   margin-top: 22px;
+}
+.introduce-video{
+margin-top: 14px;
 }
 .map{
   margin-top: 38px;
