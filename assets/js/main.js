@@ -8,6 +8,7 @@ function scrollFunction() {
         document.getElementById("header-navbar-two").style.position = "fixed";
         document.getElementById("header-navbar-two").style.top = "0px";
         document.getElementById("header-navbar-two").style.left = "0px";
+        document.getElementById("header-navbar-two").style.zIndex = "1";
         if (mediaQuery.matches) {
             document.getElementById("header-navbar-two").style.display = "none";
         }
@@ -19,4 +20,14 @@ function scrollFunction() {
     }
 }
 
-// -----------------------------jQuery-Animations--------------------------------
+// document.addEventListener('DOMContentLoaded', () => {
+//     const element =document.getElementById("fadeInUp");
+//    element.classList.add("fadeInUp");
+//   });
+
+
+//   ------------------------------jQuery-For-Animation--------------------------------
+
+$(document).ready(function(){
+    $("#fadeInUp").fadeIn(2000);
+});
