@@ -160,7 +160,7 @@
 /* ---------------------hero-section-Start-------------------------- */
 
 .hero-section {
-  background-image: url('../assets/img/MOIN-LAW-SLIDER.webp');
+  background-image: url('/assets/img/MOIN-LAW-SLIDER.webp');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -225,7 +225,7 @@
 
 /* ---------------------Footer-Section-Start-------------------------- */
 footer{
-  background-image: url('../assets/img/footer-background.jpg');
+  background-image: url('/assets/img/footer-background.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
