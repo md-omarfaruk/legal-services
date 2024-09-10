@@ -1,0 +1,28 @@
+.dynalight-regular {
+    font-family: "Dynalight", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.contact-page-map{
+    padding: 0;
+}
+.contact-title{
+    font-size: 18px;
+    line-height: 1.5em;
+}
+.contact-page-client-img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.name{
+    font-size: 24px;
+    line-height: 2.5em;
+    color: #c18f59;
+    margin: 0;
+}
+address{
+    font-size: 15px;
+    color: #6A6A6A;
+}
