@@ -91,64 +91,74 @@ lightboxImage.addEventListener('click', (e) => {
 e.stopPropagation();
 
 });
-
+document.onkeydown = function(e) {
+  if (e.key === "ArrowRight") {
+      transitionSlidesRight();
+  } else if (e.key === "ArrowLeft") {
+      transitionSlidesLeft();
+  }
+};
 
 // --------------------Gallery-Lightbox-Script-End--------------------------------
+// --------------------Gallery-Lightbox-Keyboard-Keys-Adding-Script-Start--------------------------------
 
-lightboxBtnRight.addEventListener('keydown', (e) => {
-  if (e.key === "ArrowRight") {
-    lightboxBtnRight.focus();
-    $('.lightbox-image').addClass('slideleft');  
-      setTimeout(function() {
-       activeImage === lastImage ? setActiveImage(lightboxArray[0]) : setActiveImage(lightboxArray[activeImage+1]);
-    }, 250); 
-      setTimeout(function() {
-        $('.lightbox-image').removeClass('slideleft');
-    }, 500);
-  }
-});
+// lightboxBtnRight.addEventListener('keydown', (e) => {
+//   if (e.key === "ArrowRight") {
+//     lightboxBtnRight.focus();
+//     $('.lightbox-image').addClass('slideleft');  
+//       setTimeout(function() {
+//        activeImage === lastImage ? setActiveImage(lightboxArray[0]) : setActiveImage(lightboxArray[activeImage+1]);
+//     }, 250); 
+//       setTimeout(function() {
+//         $('.lightbox-image').removeClass('slideleft');
+//     }, 500);
+//   }
+// });
 
-lightboxBtnLeft.addEventListener('keydown', (e) => {
-  if (e.key === "ArrowLeft") {
-    lightboxBtnLeft.focus();
-  $('.lightbox-image').addClass('slideright'); 
-   setTimeout(function() {
-  activeImage === 0 ? setActiveImage(lightboxArray[lastImage]) : setActiveImage(lightboxArray[activeImage-1]);
-}, 250); 
-
-
-  setTimeout(function() {
-    $('.lightbox-image').removeClass('slideright');
-}, 500); 
-  }
-});
+// lightboxBtnLeft.addEventListener('keydown', (e) => {
+//   if (e.key === "ArrowLeft") {
+//     lightboxBtnLeft.focus();
+//   $('.lightbox-image').addClass('slideright'); 
+//    setTimeout(function() {
+//   activeImage === 0 ? setActiveImage(lightboxArray[lastImage]) : setActiveImage(lightboxArray[activeImage-1]);
+// }, 250); 
 
 
-
-document.getElementById('right').onkeydown = function(e) {
-  if (e.key === "ArrowRight") {
-    lightboxBtnRight.focus();
-    $('.lightbox-image').addClass('slideleft');  
-      setTimeout(function() {
-       activeImage === lastImage ? setActiveImage(lightboxArray[0]) : setActiveImage(lightboxArray[activeImage+1]);
-    }, 250); 
-      setTimeout(function() {
-        $('.lightbox-image').removeClass('slideleft');
-    }, 500);
-  }
-};
-
-document.getElementById('right').onkeydown = function(e) {
-  if (e.key === "ArrowLeft") {
-    lightboxBtnLeft.focus();
-  $('.lightbox-image').addClass('slideright'); 
-   setTimeout(function() {
-  activeImage === 0 ? setActiveImage(lightboxArray[lastImage]) : setActiveImage(lightboxArray[activeImage-1]);
-}, 250); 
+//   setTimeout(function() {
+//     $('.lightbox-image').removeClass('slideright');
+// }, 500); 
+//   }
+// });
 
 
-  setTimeout(function() {
-    $('.lightbox-image').removeClass('slideright');
-}, 500); 
-  }
-};
+
+// document.getElementById('right').onkeydown = function(e) {
+//   if (e.key === "ArrowRight") {
+//     lightboxBtnRight.focus();
+//     $('.lightbox-image').addClass('slideleft');  
+//       setTimeout(function() {
+//        activeImage === lastImage ? setActiveImage(lightboxArray[0]) : setActiveImage(lightboxArray[activeImage+1]);
+//     }, 250); 
+//       setTimeout(function() {
+//         $('.lightbox-image').removeClass('slideleft');
+//     }, 500);
+//   }
+// };
+
+// document.getElementById('right').onkeydown = function(e) {
+//   if (e.key === "ArrowLeft") {
+//     lightboxBtnLeft.focus();
+//   $('.lightbox-image').addClass('slideright'); 
+//    setTimeout(function() {
+//   activeImage === 0 ? setActiveImage(lightboxArray[lastImage]) : setActiveImage(lightboxArray[activeImage-1]);
+// }, 250); 
+
+
+//   setTimeout(function() {
+//     $('.lightbox-image').removeClass('slideright');
+// }, 500); 
+//   }
+// };
+
+// --------------------Gallery-Lightbox-Keyboard-Keys-Adding-Script-End--------------------------------
+
