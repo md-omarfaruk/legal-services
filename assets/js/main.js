@@ -34,14 +34,14 @@ const lightboxBtnLeft = document.querySelector('#left');
 const close = document.querySelector('#close');
 let activeImage;
 // Functions
-const showLightBox = () => {lightboxContainer.classList.add('active')}
+const showLightBox = () => {lightboxContainer.classList.add('active')};
 
-const hideLightBox = () => {lightboxContainer.classList.remove('active')}
+const hideLightBox = () => {lightboxContainer.classList.remove('active')};
 
 const setActiveImage = (image) => {
 lightboxImage.src = image.dataset.imgsrc;
 activeImage= lightboxArray.indexOf(image);
-}
+};
 
 const transitionSlidesLeft = () => {
   lightboxBtnLeft.focus();
@@ -54,7 +54,7 @@ const transitionSlidesLeft = () => {
   setTimeout(function() {
     $('.lightbox-image').removeClass('slideright');
 }, 500);   
-}
+};
 
 const transitionSlidesRight = () => {
  lightboxBtnRight.focus();
@@ -65,11 +65,11 @@ $('.lightbox-image').addClass('slideleft');
   setTimeout(function() {
     $('.lightbox-image').removeClass('slideleft');
 }, 500);  
-}
+};
 
 const transitionSlideHandler = (moveItem) => {
   moveItem.includes('left') ? transitionSlidesLeft() : transitionSlidesRight();
-}
+};
 
 // Event Listeners
 lightboxEnabled.forEach(image => {
@@ -77,18 +77,78 @@ lightboxEnabled.forEach(image => {
     showLightBox();
     setActiveImage(image);
     })                     
-    })
-lightboxContainer.addEventListener('click', () => {hideLightBox()})
-close.addEventListener('click', () => {hideLightBox()})
+    });
+lightboxContainer.addEventListener('click', () => {hideLightBox()});
+close.addEventListener('click', () => {hideLightBox()});
 lightboxBtns.forEach(btn => {
 btn.addEventListener('click', (e) => {
 e.stopPropagation();
   transitionSlideHandler(e.currentTarget.id);
 })
-})
+});
 
 lightboxImage.addEventListener('click', (e) => {
 e.stopPropagation();
 
-})
+});
+
+
 // --------------------Gallery-Lightbox-Script-End--------------------------------
+
+lightboxBtnRight.addEventListener('keydown', (e) => {
+  if (e.key === "ArrowRight") {
+    lightboxBtnRight.focus();
+    $('.lightbox-image').addClass('slideleft');  
+      setTimeout(function() {
+       activeImage === lastImage ? setActiveImage(lightboxArray[0]) : setActiveImage(lightboxArray[activeImage+1]);
+    }, 250); 
+      setTimeout(function() {
+        $('.lightbox-image').removeClass('slideleft');
+    }, 500);
+  }
+});
+
+lightboxBtnLeft.addEventListener('keydown', (e) => {
+  if (e.key === "ArrowLeft") {
+    lightboxBtnLeft.focus();
+  $('.lightbox-image').addClass('slideright'); 
+   setTimeout(function() {
+  activeImage === 0 ? setActiveImage(lightboxArray[lastImage]) : setActiveImage(lightboxArray[activeImage-1]);
+}, 250); 
+
+
+  setTimeout(function() {
+    $('.lightbox-image').removeClass('slideright');
+}, 500); 
+  }
+});
+
+
+
+document.getElementById('right').onkeydown = function(e) {
+  if (e.key === "ArrowRight") {
+    lightboxBtnRight.focus();
+    $('.lightbox-image').addClass('slideleft');  
+      setTimeout(function() {
+       activeImage === lastImage ? setActiveImage(lightboxArray[0]) : setActiveImage(lightboxArray[activeImage+1]);
+    }, 250); 
+      setTimeout(function() {
+        $('.lightbox-image').removeClass('slideleft');
+    }, 500);
+  }
+};
+
+document.getElementById('right').onkeydown = function(e) {
+  if (e.key === "ArrowLeft") {
+    lightboxBtnLeft.focus();
+  $('.lightbox-image').addClass('slideright'); 
+   setTimeout(function() {
+  activeImage === 0 ? setActiveImage(lightboxArray[lastImage]) : setActiveImage(lightboxArray[activeImage-1]);
+}, 250); 
+
+
+  setTimeout(function() {
+    $('.lightbox-image').removeClass('slideright');
+}, 500); 
+  }
+};
