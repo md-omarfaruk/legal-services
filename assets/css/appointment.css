@@ -2,7 +2,9 @@
     background-color: #F2F2F2;
     padding: 100px 0;
   }
-
+  .appointment-details{
+    max-height: 230px;
+  }
   .appointment-icon{
     min-width: 22px;
     min-height: 22px;
@@ -20,8 +22,12 @@
     min-height: 26px;
   } */
 
-.service h5{
+.service h4,h5{
     color: #202c45;
+}
+.all-icon{
+  color: #12D488;
+  border-color:#12D488 !important;
 }
 .appointment-page-client-img{
   max-width: 56px;
@@ -30,6 +36,9 @@
 }
 .service-details{
   font-weight: 400;
+}
+.note{
+  color: #535D71;
 }
 .service-details-icon{
   font-size: 25px;
@@ -50,4 +59,20 @@
 }
 .icon-link>.bi {
   margin-bottom: 10px;
+}
+
+.time-slot h6{
+  font-weight: 400;
+  color: #535D71;
+}
+
+.times h5{
+  color: #535D71;
+  font-size: 14px;
+  font-weight: 400;
+}
+.times h6{
+  color: #535D71;
+  font-size: 13px;
+  font-weight: 400;
 }
