@@ -1,0 +1,13 @@
+.appointment-title {
+    background-color: #F2F2F2;
+    padding: 100px 0;
+  }
+  .bi-card-list{
+    fill: white !important;
+    background-color: #12D488;
+    min-width: 34px;
+    min-height: 34px;
+  }
+  .icon-link{
+    color: #12D488;
+  }
