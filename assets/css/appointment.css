@@ -92,9 +92,14 @@ border-radius: 5px;
 }
 #select-date{
   padding: 8px 26px;
+  color: #535D71;
   border: 1px solid #12D488;
   border-radius: 5px;
 }
 h6.slot{
   color: #12D488;
+}
+
+.basic-details h4{
+  color: #202c45;
 }
