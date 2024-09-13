@@ -130,6 +130,7 @@
   font-size: 50px;
 }
 #close {
+  position: absolute;
   color: white;
   z-index: 999;
   cursor: pointer;
@@ -150,6 +151,7 @@
 }
 
 #close {
+  position: absolute;
   top: 50px;
   right: 70px;
 }
