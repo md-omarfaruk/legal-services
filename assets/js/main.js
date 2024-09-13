@@ -101,49 +101,4 @@ document.onkeydown = function(e) {
 
 // --------------------Gallery-Lightbox-Script-End--------------------------------
 
-const daysElement = document.getElementById("days");
-const monthYearElement = document.getElementById("month-year");
-
-let currentDate = new Date();
-
-function renderCalendar() {
-    const currentMonth = currentDate.getMonth();
-    const currentYear = currentDate.getFullYear();
-
-    const firstDayOfMonth = new Date(currentYear, currentMonth, 1).getDay();
-    const lastDateOfMonth = new Date(currentYear, currentMonth + 1, 0).getDate();
-    
-    daysElement.innerHTML = '';
-    monthYearElement.innerText = `${currentDate.toLocaleString('default', { month: 'long' })} ${currentYear}`;
-
-    // Adding empty divs before the first day of the month
-    for (let i = 0; i < firstDayOfMonth; i++) {
-        daysElement.innerHTML += '<div></div>';
-    }
-
-    // Adding days
-    for (let i = 1; i <= lastDateOfMonth; i++) {
-        const dayElement = document.createElement("div");
-        dayElement.innerText = i;
-        dayElement.addEventListener("click", () => selectDate(i));
-        daysElement.appendChild(dayElement);
-    }
-}
-
-function selectDate(day) {
-    alert(`Selected date: ${currentDate.getMonth() + 1}/${day}/${currentDate.getFullYear()}`);
-}
-
-function nextMonth() {
-    currentDate.setMonth(currentDate.getMonth() + 1);
-    renderCalendar();
-}
-
-function prevMonth() {
-    currentDate.setMonth(currentDate.getMonth() - 1);
-    renderCalendar();
-}
-
-// Render the calendar when the DOM content is loaded
-document.addEventListener('DOMContentLoaded', renderCalendar);
 
