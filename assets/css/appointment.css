@@ -23,3 +23,31 @@
 .service h5{
     color: #202c45;
 }
+.appointment-page-client-img{
+  max-width: 56px;
+  max-height: 56px;
+  border-radius: 100%;
+}
+.service-details{
+  font-weight: 400;
+}
+.service-details-icon{
+  font-size: 25px;
+  position: absolute;
+  top: 2% !important;
+  right: 2% !important;
+  color: #12D488;
+}
+.amount{
+  color: white;
+  background-color: #12D488;
+}
+.service-details{
+  border-color: #12D488!important;
+}
+.next-date-time .icon-link{
+  background-color: #12D488;
+}
+.icon-link>.bi {
+  margin-bottom: 10px;
+}
