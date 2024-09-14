@@ -91,3 +91,191 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+
+
+// document.addEventListener('DOMContentLoaded', () => {
+//     const serviceSection = document.getElementById('service');
+//     const selectService = document.getElementById('selectService');
+//     const dateTimeSection = document.getElementById('dateTime');
+//     const basicDetailsSection = document.getElementById('basicDetails');
+//     const summarySection = document.getElementById('summary');
+//     const requiredNote = document.getElementById('requiredNote');
+//     const nextService = document.getElementById('next');
+//     const goBackDateTime = document.getElementById('goBack');
+//     const timeSlots = document.querySelectorAll('.slot');
+//     let selectedSlot = null;
+
+//     // Helper function to hide or show sections
+//     const toggleDisplay = (sectionToShow) => {
+//         serviceSection.style.display = 'none';
+//         dateTimeSection.style.display = 'none';
+//         basicDetailsSection.style.display = 'none';
+//         summarySection.style.display = 'none';
+//         sectionToShow.style.display = 'block';
+//     };
+
+//     // Hide required note after 5 seconds
+//     const hideRequiredNote = () => {
+//         setTimeout(() => {
+//             requiredNote.style.display = 'none';
+//         }, 5000);
+//     };
+
+//     // When "selectService" is clicked, show Date & Time section
+//     selectService.addEventListener('click', () => {
+//         toggleDisplay(dateTimeSection);
+//     });
+
+//     // When "Next" in the service section is clicked
+//     nextService.addEventListener('click', (event) => {
+//         if (!selectedSlot) {
+//             requiredNote.innerHTML = "Please select any service to book an appointment";
+//             requiredNote.style.color = "red";
+//             requiredNote.style.display = "block";
+//             hideRequiredNote();
+//         }
+//     });
+
+//     // When a time slot is clicked, select the slot and show Basic Details section
+//     timeSlots.forEach(slot => {
+//         slot.addEventListener('click', () => {
+//             selectedSlot = slot; // Store the selected slot
+//             toggleDisplay(basicDetailsSection);
+//         });
+//     });
+
+//     // When "goBack" in the Date & Time section is clicked, show Select Service
+//     goBackDateTime.addEventListener('click', () => {
+//         toggleDisplay(serviceSection);
+//     });
+
+//     // When "Next" in the Date & Time section is clicked
+//     document.querySelector('#dateTime #next').addEventListener('click', () => {
+//         if (!selectedSlot) {
+//             requiredNote.innerHTML = "Please select a time slot to proceed with the booking.";
+//             requiredNote.style.color = "red";
+//             requiredNote.style.display = "block";
+//             hideRequiredNote();
+//         } else {
+//             toggleDisplay(basicDetailsSection);
+//         }
+//     });
+
+//     // When "Next" in the Basic Details section is clicked
+//     document.querySelector('#basicDetails #next').addEventListener('click', () => {
+//         const telInput = document.getElementById('tel').value;
+//         const telPattern = /^[+]?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}$/;
+        
+//         if (telInput && telPattern.test(telInput)) {
+//             toggleDisplay(summarySection);
+//         } else {
+//             requiredNote.innerHTML = "Please enter a valid telephone number.";
+//             requiredNote.style.color = "red";
+//             requiredNote.style.display = "block";
+//             hideRequiredNote();
+//         }
+//     });
+
+//     // When "goBack" in the Basic Details section is clicked, go back to Date & Time
+//     document.querySelector('#basicDetails #goBack').addEventListener('click', () => {
+//         toggleDisplay(dateTimeSection);
+//     });
+
+//     // When "goBack" in the Summary section is clicked, go back to Basic Details
+//     document.querySelector('#summary #goBack').addEventListener('click', () => {
+//         toggleDisplay(basicDetailsSection);
+//     });
+// });
+
+
+// ------------------------------new------------------------------
+
+// // Get elements  
+// const serviceElement = document.getElementById('service');  
+// const dateTimeElement = document.getElementById('dateTime');  
+// const basicDetailsElement = document.getElementById('basicDetails');  
+// const summaryElement = document.getElementById('summary');  
+// const selectServiceElement = document.getElementById('selectService');  
+// const nextElement = document.getElementById('next');  
+// const goBackElement = document.getElementById('goBack');  
+// const requiredNoteElement = document.getElementById('requiredNote');  
+// const slotElements = document.querySelectorAll('.slot');  
+// const telElement = document.getElementById('tel');  
+  
+// // Initial state  
+// serviceElement.style.display = 'block';  
+// dateTimeElement.style.display = 'none';  
+// basicDetailsElement.style.display = 'none';  
+// summaryElement.style.display = 'none';  
+  
+// // Event listeners  
+// selectServiceElement.addEventListener('click', () => {  
+//   dateTimeElement.style.display = 'block';  
+//   serviceElement.style.display = 'none';  
+//   basicDetailsElement.style.display = 'none';  
+//   summaryElement.style.display = 'none';  
+// });  
+  
+// nextElement.addEventListener('click', () => {  
+//   if (selectServiceElement.style.display === 'block') {  
+//    requiredNoteElement.innerHTML = 'Please select any service to book an appointment';  
+//    requiredNoteElement.style.color = 'red';  
+//    requiredNoteElement.style.display = 'block';  
+//    setTimeout(() => {  
+//     requiredNoteElement.style.display = 'none';  
+//    }, 5000);  
+//   } else if (dateTimeElement.style.display === 'block') {  
+//    if (!slotElements.some(slot => slot.classList.contains('selected'))) {  
+//     requiredNoteElement.innerHTML = 'Please select a time slot to proceed with the booking.';  
+//     requiredNoteElement.style.color = 'red';  
+//     requiredNoteElement.style.display = 'block';  
+//     setTimeout(() => {  
+//       requiredNoteElement.style.display = 'none';  
+//     }, 5000);  
+//    } else {  
+//     basicDetailsElement.style.display = 'block';  
+//     dateTimeElement.style.display = 'none';  
+//     serviceElement.style.display = 'none';  
+//     summaryElement.style.display = 'none';  
+//    }  
+//   } else if (basicDetailsElement.style.display === 'block') {  
+//    if (telElement.value.trim() !== '' && isValidTelNumber(telElement.value)) {  
+//     summaryElement.style.display = 'block';  
+//     basicDetailsElement.style.display = 'none';  
+//     dateTimeElement.style.display = 'none';  
+//     serviceElement.style.display = 'none';  
+//    }  
+//   }  
+// });  
+  
+// goBackElement.addEventListener('click', () => {  
+//   if (summaryElement.style.display === 'block') {  
+//    basicDetailsElement.style.display = 'block';  
+//    summaryElement.style.display = 'none';  
+//    dateTimeElement.style.display = 'none';  
+//    serviceElement.style.display = 'none';  
+//   } else if (basicDetailsElement.style.display === 'block') {  
+//    dateTimeElement.style.display = 'block';  
+//    basicDetailsElement.style.display = 'none';  
+//    serviceElement.style.display = 'none';  
+//    summaryElement.style.display = 'none';  
+//   } else if (dateTimeElement.style.display === 'block') {  
+//    serviceElement.style.display = 'block';  
+//    dateTimeElement.style.display = 'none';  
+//    basicDetailsElement.style.display = 'none';  
+//    summaryElement.style.display = 'none';  
+//   }  
+// });  
+  
+// slotElements.forEach(slot => {  
+//   slot.addEventListener('click', () => {  
+//    slot.classList.add('selected');  
+//   });  
+// });  
+  
+// // Helper function to validate tel number  
+// function isValidTelNumber(telNumber) {  
+//   // Add your tel number validation logic here  
+//   return true; // For demo purposes, always return true  
+// }
