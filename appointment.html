@@ -21,7 +21,7 @@
     <!-- ---------------------Appointment-Page-Stylesheet--------------------------- -->
     <link rel="stylesheet" href="assets/css/appointment.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
-<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 
     <!-- ---------------------Main-Stylesheet--------------------------- -->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -235,23 +235,24 @@
                         </a>
                     </div>
                     <div class="col-lg-9 p-3 border rounded-3 shadow">
-<!-- -----------------------------Service-part-Start---------------------------- -->
+                        <!-- -----------------------------Service-part-Start---------------------------- -->
                         <div class="service">
                             <h4>Select Category</h4>
                             <a class="icon-link all-icon py-2 px-3 border rounded-2" href="#">
-                            All
-                            <i class="bi bi-check-circle-fill ms-2"></i>
+                                All
+                                <i class="bi bi-check-circle-fill ms-2"></i>
                             </a>
                             <h5 class="my-3">Select Service</h5>
                             <div class="d-flex p-3 service-details border rounded-3 position-relative">
                                 <div>
-                                    <img src="assets/img/client-img-1.jpg"
-                                        class="appointment-page-client-img border-0" alt="Adv Bashir Ahammed">
+                                    <img src="assets/img/client-img-1.jpg" class="appointment-page-client-img border-0"
+                                        alt="Adv Bashir Ahammed">
                                 </div>
                                 <div class="ms-3">
                                     <h5>Appointment with Our Attorney</h5>
                                     <h6>You have to pay before the meeting.</h6>
-                                    <p class="note">Note: Please note that if anyone wishes to cancel a scheduled appointment after
+                                    <p class="note">Note: Please note that if anyone wishes to cancel a scheduled
+                                        appointment after
                                         it is paid and confirmed, Appointment Fee (Non Refundable )</p>
                                     <div class="d-flex">
                                         <p class="duration me-3">Duration: <strong>30m</strong></p>
@@ -265,101 +266,180 @@
                                 <a class="icon-link p-2 text-white rounded-3" href="#">
                                     Next: <strong class="date-time">Date & Time</strong>
                                     <i class="bi bi-arrow-right"></i>
-                                  </a>
+                                </a>
                             </div>
                         </div>
                         <!-- ---------------------------Service-Part-End------------------------ -->
-<!-- -------------------------------Date-&-Time-Part-Start------------------------------ -->
-<div class="date-time">    
-    <h4>Date & Time</h4>
-    <div class="row mt-3">
-        <div class="col-12 calendar-body text-center">
-            <form action="/action_page.php">
-                <label for="select-date">Select Your Date:</label>
-                <input type="date" id="select-date" name="select-date">
-                <input type="submit" value="Select">
-              </form>
-        </div>
-        <div class="col-12 p-3 time-slot">
-            <h5 class="mb-4">Time Slot</h5>
-            <h6 class="slot">Morning</h6>
-            <div class="times row mb-4 justify-content-between">
-                <div class="col-5 mb-2 py-2 px-3 border rounded-2">
-                    <h5>10:35 am - 11:05 am</h5>
-                    <h6>0 Slots left</h6>
-                </div>
-                <div class="col-5 mb-2 py-2 px-3 border rounded-2">
-                    <h5>11:35 am - 12:05 am</h5>
-                    <h6>0 Slots left</h6>
-                </div>           
-            </div>
-            <h6 class="slot">Afternoon</h6>
-            <div class="times row mb-4 justify-content-between">
-                <div class="col-5 mb-2 py-2 px-3 border rounded-2">
-                    <h5>12:05 am - 12:35 am</h5>
-                    <h6>0 Slots left</h6>
-                </div>
-                <div class="col-5 mb-2 py-2 px-3 border rounded-2">
-                    <h5>12:35 am - 01:05 am</h5>
-                    <h6>0 Slots left</h6>
-                </div>
-                <div class="col-5 mb-2 py-2 px-3 border rounded-2">
-                    <h5>01:05 am - 01:35 am</h5>
-                    <h6>0 Slots left</h6>
-                </div>
-                <div class="col-5 mb-2 py-2 px-3 border rounded-2">
-                    <h5>01:35 am - 02:05 am</h5>
-                    <h6>0 Slots left</h6>
-                </div>
-                <div class="col-5 mb-2 py-2 px-3 border rounded-2">
-                    <h5>02:05 am - 02:35 am</h5>
-                    <h6>0 Slots left</h6>
-                </div>
-                <div class="col-5 mb-2 py-2 px-3 border rounded-2">
-                    <h5>02:35 am - 03:05 am</h5>
-                    <h6>0 Slots left</h6>
-                </div>
-            </div>
-            <h6 class="slot">Morning</h6>
-            <div class="times row mb-4 justify-content-between">
-                <div class="col-5 mb-2 py-2 px-3 border rounded-2">
-                    <h5>03:05 am - 03:35 am</h5>
-                    <h6>0 Slots left</h6>
-                </div>            
-            </div>
-        </div>
-    </div>
-    
-
-    <div class="next-date-time d-flex rounded-2 justify-content-end p-4 bg-body-secondary mt-5">
-        <a class="icon-link p-2 text-white rounded-3" href="#">
-            Next: <strong class="date-time">Date & Time</strong>
-            <i class="bi bi-arrow-right"></i>
-          </a>
-    </div>
-</div>
-<!-- -------------------------------Date-&-Time-End------------------------------- -->
-<!-- -------------------------------Basic-Details-Start------------------------------- -->
-<div class="basic-details">
-    <div class="row">
-        <div class="col">
-    <h4>Basic Details</h4>
-</div>
-<div class="col text-lg-end">
-    <form action="/action_page.php">
-        <label for="select-date">Pick a Date:</label>
-        <input type="date" id="select-date" name="select-date">
-        <input type="submit" value="Select">
-      </form>
-    </div>
-    </div>    
-    </div>
-<!-- -------------------------------Basic-Details-End------------------------------- -->
-<!-- -------------------------------Summary-Part-Start------------------------------- -->
-<!-- -------------------------------Summary-Part-End------------------------------- -->
+                        <!-- -------------------------------Date-&-Time-Part-Start------------------------------ -->
+                        <div class="date-time">
+                            <h4>Date & Time</h4>
+                            <div class="row mt-3">
+                                <div class="col-12 calendar-body text-center">
+                                    <form action="/action_page.php">
+                                        <label for="select-date">Select Your Date:</label>
+                                        <input type="date" id="select-date" name="select-date">
+                                        <input type="submit" value="Select">
+                                    </form>
+                                </div>
+                                <div class="col-12 p-3 time-slot">
+                                    <h5 class="mb-4">Time Slot</h5>
+                                    <h6 class="slot">Morning</h6>
+                                    <div class="times row mb-4 justify-content-between">
+                                        <div class="col-5 mb-2 py-2 px-3 border rounded-2">
+                                            <h5>10:35 am - 11:05 am</h5>
+                                            <h6>0 Slots left</h6>
+                                        </div>
+                                        <div class="col-5 mb-2 py-2 px-3 border rounded-2">
+                                            <h5>11:35 am - 12:05 am</h5>
+                                            <h6>0 Slots left</h6>
+                                        </div>
+                                    </div>
+                                    <h6 class="slot">Afternoon</h6>
+                                    <div class="times row mb-4 justify-content-between">
+                                        <div class="col-5 mb-2 py-2 px-3 border rounded-2">
+                                            <h5>12:05 am - 12:35 am</h5>
+                                            <h6>0 Slots left</h6>
+                                        </div>
+                                        <div class="col-5 mb-2 py-2 px-3 border rounded-2">
+                                            <h5>12:35 am - 01:05 am</h5>
+                                            <h6>0 Slots left</h6>
+                                        </div>
+                                        <div class="col-5 mb-2 py-2 px-3 border rounded-2">
+                                            <h5>01:05 am - 01:35 am</h5>
+                                            <h6>0 Slots left</h6>
+                                        </div>
+                                        <div class="col-5 mb-2 py-2 px-3 border rounded-2">
+                                            <h5>01:35 am - 02:05 am</h5>
+                                            <h6>0 Slots left</h6>
+                                        </div>
+                                        <div class="col-5 mb-2 py-2 px-3 border rounded-2">
+                                            <h5>02:05 am - 02:35 am</h5>
+                                            <h6>0 Slots left</h6>
+                                        </div>
+                                        <div class="col-5 mb-2 py-2 px-3 border rounded-2">
+                                            <h5>02:35 am - 03:05 am</h5>
+                                            <h6>0 Slots left</h6>
+                                        </div>
+                                    </div>
+                                    <h6 class="slot">Morning</h6>
+                                    <div class="times row mb-4 justify-content-between">
+                                        <div class="col-5 mb-2 py-2 px-3 border rounded-2">
+                                            <h5>03:05 am - 03:35 am</h5>
+                                            <h6>0 Slots left</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row rounded-2 bg-body-secondary mt-5 p-4">
+                            <div class="col go-back">
+                                <a class="icon-link p-2 text-black" href="#">
+                                <i class="bi bi-arrow-left"></i>
+                                <strong class="date-time">Go Back</strong>                               
+                                </a>
+                            </div>
+                            <div class="col next-date-time text-md-end">
+                                <a class="icon-link p-2 text-white rounded-3" href="#">
+                                    Next: <strong class="date-time">Basic Details</strong>
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        </div>
+                        <!-- -------------------------------Date-&-Time-End------------------------------- -->
+                        <!-- -------------------------------Basic-Details-Start------------------------------- -->
+                        <div class="basic-details">
+                            <div class="row">
+                                <div class="col">
+                                    <h4>Basic Details</h4>
+                                </div>
+                                <div class="col text-lg-end">
+                                    <form action="/action_page.php">
+                                        <label for="select-date">Pick a Date:</label>
+                                        <input type="date" id="select-date" name="select-date">
+                                        <input type="submit" value="Select">
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Your Full Name</label>
+                                    <input type="text" class="form-control" id="name"
+                                        placeholder="Enter Your Full Name">
+                                </div>
+                                <div class="row">
+                                    <div class="row">
+                                        <div class="col">
+                                            <label for="phone">Home Phone</label>
+                                            <input type="tel" id="phone" name="phone" class="form-control"
+                                                placeholder="+880-1868787748" aria-label="Phone">
+                                        </div>
+                                        <div class="col">
+                                            <label for="email">Email Address</label>
+                                            <input type="email" id="email" name="email" class="form-control"
+                                                placeholder="Enter Your Email Address" aria-label="Email Address">
+                                        </div>
+                                    </div>
+                                    <div class="form-floating">
+                                        <label for="history"></label>
+                                        <textarea class="form-control" rows="5" id="history"
+                                            name="text">Enter Your Details Here</textarea>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="adress" class="form-label">Address</label>
+                                        <input type="text" class="form-control" id="adress"
+                                            placeholder="Enter Your Address">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="tel" class="form-label">Cell Number</label>
+                                        <input type="tel" class="form-control" id="tel"
+                                            placeholder="Enter Your Cell Number" required>
+                                    </div>
+                                    <h5 class="ms-32">Consultation Free Paid</h5>
+                                    <div class="form-check ms-2">
+                                        <input type="radio" class="form-check-input" id="radio1" name="optradio"
+                                            value="option1" checked>Yes
+                                        <label class="form-check-label" for="radio1"></label>
+                                    </div>
+                                    <div class="form-check ms-2">
+                                        <input type="radio" class="form-check-input" id="radio2" name="optradio"
+                                            value="option2">No
+                                        <label class="form-check-label" for="radio2"></label>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <label for="personName"></label>
+                                            <textarea class="form-control" rows="5" id="personName"
+                                                name="text">Enter Referred Person Name</textarea>
+                                        </div>
+                                        <div class="col">
+                                            <label for="tel" class="form-label"></label>
+                                            <input type="tel" class="form-control" id="tel"
+                                                placeholder="Enter Referred Number" required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row rounded-2 bg-body-secondary mt-5 p-4">
+                                <div class="col go-back">
+                                    <a class="icon-link p-2 text-black" href="#">
+                                    <i class="bi bi-arrow-left"></i>
+                                    <strong class="date-time">Go Back</strong>                               
+                                    </a>
+                                </div>
+                                <div class="col next-date-time text-md-end">
+                                    <a class="icon-link p-2 text-white rounded-3" href="#">
+                                        Next: <strong class="date-time">Summary</strong>
+                                        <i class="bi bi-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
                     </div>
+                    <!-- -------------------------------Basic-Details-End------------------------------- -->
+                    <!-- -------------------------------Summary-Part-Start------------------------------- -->
+                    <!-- -------------------------------Summary-Part-End------------------------------- -->
                 </div>
             </div>
+        </div>
         </div>
 
         <!-- ---------------------Footer-Section-Start--------------------------- -->
