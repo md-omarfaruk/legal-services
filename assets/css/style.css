@@ -232,8 +232,8 @@ footer{
   border-top: 3px solid #c18f59;
 }
 .footer-desc{
-  color: #bcbcbc;
-  font-size: 13px;
+  color: white;
+  font-size: 15px;
 }
 .footer-social-links .bi{
 color: white;
@@ -256,26 +256,21 @@ footer .border-end{
   border-color: #bcbcbc !important;
 }
 .footer-contact h5{
-  font-size: 16px;
+  font-size: 18px;
+}
+.contact-details .text-white .bi{
+  font-size: 20px;
 }
 .bi-paperclip{
   font-size: 24px;
   color: #c18f59;
 }
 footer .contact-details p{
-  color: #bcbcbc;
-  font-size: 13px;
+  font-size: 15px;
 }
-.footer-video-title{
-  font-size: 18px;
+.footer-important-links{
+  font-size: 15px;
 }
-
-.footer-office-address{
-  font-size: 14px;
-}
-.introduce-video{
-  margin-top: 14px;
-  }
 .copyright-text{
   background-color: #141414;
 }
@@ -287,11 +282,11 @@ footer .contact-details p{
   background-color: #25d366;
   font-size: 18px;
   left: 2%;
-  bottom: 9%;
+  bottom: 3%;
 }
 .home-btn{
   right: 2%;
-  bottom: 9%;
+  bottom: 3%;
 }
 .bi-arrow-up-short{
   color: #c18f59;
