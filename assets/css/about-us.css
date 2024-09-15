@@ -7,3 +7,6 @@
     color: #6A6A6A;
     line-height: 24px;
   }
+  img.card-img-top{
+    min-height: 276px;
+  }
