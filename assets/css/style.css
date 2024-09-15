@@ -120,7 +120,7 @@
   display: none;
 }
 
-.navbar .nav-link.active {
+.navbar a.nav-link.active {
   color: white;
   border-bottom: 3px solid #c18f59;
 }

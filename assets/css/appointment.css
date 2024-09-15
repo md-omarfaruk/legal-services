@@ -1,109 +1,131 @@
 .appointment-title {
-    background-color: #F2F2F2;
-    padding: 100px 0;
-  }
-  .appointment-details{
-    max-height: 230px;
-  }
-  .appointment-icon{
-    min-width: 22px;
-    min-height: 22px;
-  }
-  .icon-link{
-    color: #535D71;
-    letter-spacing: 1.5px;
-    padding-bottom: 12px;
-  }
-  .active{
-    color: #12D488;
-  }
-  /* .active .appointment-icon{
-    min-width: 26px;
-    min-height: 26px;
-  } */
+  background-color: #F2F2F2;
+  padding: 100px 0;
+}
 
-.service h4,h5{
-    color: #202c45;
+.appointment-details {
+  max-height: 260px;
 }
-.all-icon{
+
+.bi.appointment-icon {
+  font-size: 22px;
+  margin-right: 8px;
+}
+.appointment-details .active{
+  color: #12D488!important;
+}
+
+.icon-link {
+  color: #535D71;
+  letter-spacing: 1px;
+  padding-bottom: 12px;
+}
+.service h4,
+h5 {
+  color: #202c45;
+}
+
+.all-icon {
+  font-size: 18px;
   color: #12D488;
-  border-color:#12D488 !important;
+  border-color: #12D488 !important;
 }
-.appointment-page-client-img{
+
+.appointment-page-client-img {
   max-width: 56px;
   max-height: 56px;
   border-radius: 100%;
 }
-.service-details{
+
+.service-details {
   font-weight: 400;
 }
-.note{
+
+.note {
   color: #535D71;
 }
-.service-details-icon{
+
+.service-details-icon {
   font-size: 25px;
   position: absolute;
   top: 2% !important;
   right: 2% !important;
   color: #12D488;
 }
-.amount{
+
+.amount {
   color: white;
   background-color: #12D488;
 }
-.service-details{
-  border-color: #b3b8b6!important;
+
+.service-details {
+  border-color: #b3b8b6 !important;
 }
-.next-date-time .icon-link{
+
+.next-date-time .icon-link {
   background-color: #12D488;
 }
+
 .icon-link>.bi {
   margin-bottom: 10px;
 }
 
-.time-slot h6{
+.time-slot h6 {
   font-weight: 400;
   color: #535D71;
 }
 
-.times h5{
+.times h5 {
   color: #535D71;
   font-size: 14px;
   font-weight: 400;
 }
-.times h6{
+
+.times h6 {
   color: #535D71;
   font-size: 13px;
   font-weight: 400;
 }
 
-.date-time h4,h5{
+.date-time h4,
+h5 {
   color: #202c45;
 }
-.calendar-body label{
+
+.calendar-body label {
   color: #12D488;
 }
-input[type="submit" i]{
-background-color: #12D488;
-color: white;
-padding: 10px 26px;
-border: none;
-border-radius: 5px;
+
+input[type="submit" i] {
+  background-color: #12D488;
+  color: white;
+  padding: 10px 26px;
+  border: none;
+  border-radius: 5px;
 }
-#select-date{
+
+#select-date {
   padding: 8px 26px;
   color: #535D71;
   border: 1px solid #12D488;
   border-radius: 5px;
 }
-h6.slot{
+
+h6.slot {
   color: #12D488;
 }
 
-.basic-details h4{
+.basic-details h4 {
   color: #202c45;
 }
-.bi-patch-check-fill{
+
+.bi-patch-check-fill {
   font-size: 30px;
   color: #12D488;
+}
+
+@media (max-width: 767.98px) {
+  .icon-link {
+    font-size: 14px;
+  }
 }
