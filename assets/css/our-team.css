@@ -2,3 +2,15 @@
     background-color: #F2F2F2;
     padding: 100px 0;
   }
+  .team-name{
+    color: #25d366;
+    padding: 100px 0 50px 0;
+  }
+  .card-footer{
+    background-color: #ac0000;
+  }
+  img.card-img-top{
+    max-width: 200px;
+    height: 200px;
+    border-radius: 100%;
+  }
