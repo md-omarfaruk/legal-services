@@ -240,6 +240,11 @@ color: white;
   font-size: 23px;
  
 }
+.footer-social-links .bi:hover{
+  color: rgb(90, 90, 90);
+    font-size: 23px;
+   
+  }
 .footer-social-links a{
   margin-bottom: 8px;
 }
@@ -276,10 +281,7 @@ footer .contact-details p{
 }
 .copyright-text p{
   color: #bcbcbc;
-  font-size: 13px;
-}
-.copyright-color-text{
-  color: #c18f59;
+  font-size: 14px;
 }
 .whats-app-btn{
   background-color: #25d366;
