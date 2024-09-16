@@ -29,3 +29,17 @@ address{
     font-size: 15px;
     color: #6A6A6A;
 }
+.google-form{
+    max-width: 700px;
+    min-height: 700px;
+}
+.google-form iframe{
+    min-width: 100%;
+    min-height: 100%;
+}
+@media (max-width: 767.98px) {
+    .contact-details .col-lg-4 .contact-title.my-3{
+       margin-top: 16px!important;
+       margin-bottom: 16px!important;;
+    }
+}

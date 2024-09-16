@@ -5,6 +5,7 @@
 
 .appointment-details {
   max-height: 260px;
+  max-width: 450px;
 }
 
 .bi.appointment-icon {
@@ -127,5 +128,8 @@ h6.slot {
 @media (max-width: 767.98px) {
   .icon-link {
     font-size: 14px;
+  }
+  .appointment-container .col-lg-9{
+    margin-top: 30px;
   }
 }
