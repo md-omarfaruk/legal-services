@@ -40,8 +40,10 @@ h5 {
 
 .service-details {
   font-weight: 400;
+  cursor: pointer;
+  border: 1px solid;
+  border-color: #b3b8b6;
 }
-
 .note {
   color: #535D71;
 }
@@ -53,7 +55,6 @@ h5 {
   right: 2% !important;
   color: #12D488;
 }
-
 .amount {
   color: white;
   background-color: #12D488;
@@ -63,7 +64,7 @@ h5 {
   border-color: #b3b8b6 !important;
 }
 
-.next-date-time .icon-link {
+.next-btn .icon-link {
   background-color: #12D488;
 }
 
