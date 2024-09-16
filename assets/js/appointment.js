@@ -1,9 +1,5 @@
 // --------------------------------Appointment-Sesign-Scripts-----------------------------
 
-
-
-
-
 // Function to handle the active state and display block/none
 function showSection(activeId, sectionId) {
     // Elements IDs
@@ -44,56 +40,123 @@ showSection('serviceItem', 'service');
 // ------------------------------functionality------------------------
 
 
-document.addEventListener("DOMContentLoaded", function () {
-    const nextButton = document.getElementById("next");
-    const selectService = document.getElementById("selectService");
-    const requiredNote = document.querySelector("#service #requiredNote");
-    const serviceSection = document.getElementById("service");
-    const dateTimeSection = document.getElementById("dateTime");
-    const basicDetailsSection = document.getElementById("basicDetails");
-    const summarySection = document.getElementById("summary");
-    const serviceDetails = document.querySelector(".service-details");
+    // Select the serviceRequiredNote element
+    const serviceRequiredNote = document.getElementById('serviceRequiredNote');
+    
+    // Set the innerHTML and the color to red
+    serviceRequiredNote.innerHTML = "Please select any service to book an appointment";
+    serviceRequiredNote.style.color = 'red';
 
-    // Initially hide the dateTime section and others
-    dateTimeSection.style.display = "none";
-    if (basicDetailsSection) basicDetailsSection.style.display = "none";
-    if (summarySection) summarySection.style.display = "none";
+    // Ensure the message is visible
+    serviceRequiredNote.style.display = 'block';
 
-    // Handle 'next' button click
-    nextButton.addEventListener("click", function (e) {
-        e.preventDefault();
+    // Hide the message automatically after 5 seconds (5000ms)
+    // setTimeout(function() {
+    //     serviceRequiredNote.style.display = 'none';
+    // }, 5000);
 
-        // Check if selectService was clicked (service not selected)
-        if (!selectService.classList.contains('service-selected')) {
-            // Show the required note message
-            requiredNote.innerHTML = "Please select any service to book an appointment";
-            requiredNote.style.color = "red";
-            requiredNote.style.display = "block";
 
-            // Hide the required note after 5 seconds
-            setTimeout(() => {
-                requiredNote.style.display = "none";
-            }, 5000);
-        }
-    });
 
-    // Add event listener for selecting the service
-    selectService.addEventListener("click", function () {
-        // Add a custom class when the service is selected
-        selectService.classList.add("service-selected");
 
-        // Change the border color of the service-details class to #12D488
-        serviceDetails.style.borderColor = "#12D488";
 
-        // Show the dateTime section
-        dateTimeSection.style.display = "block";
 
-        // Hide other sections
-        serviceSection.style.display = "none";
-        if (basicDetailsSection) basicDetailsSection.style.display = "none";
-        if (summarySection) summarySection.style.display = "none";
-    });
-});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// document.addEventListener("DOMContentLoaded", function () {
+//     const selectService = document.getElementById("selectService");
+//     const serviceRequiredNote = document.getElementById("serviceRequiredNote");
+//     const serviceSection = document.getElementById("service");
+//     const dateTimeSection = document.getElementById("dateTime");
+//     const basicDetailsSection = document.getElementById("basicDetails");
+//     const summarySection = document.getElementById("summary");
+
+//     function serviceNextBtn () {
+//         serviceRequiredNote.innerHTML = "Please select any service to book an appointment";
+//             serviceRequiredNote.style.color = "red";
+//             serviceRequiredNote.style.display = "block";
+
+//             // Hide the required note after 5 seconds
+//             setTimeout(() => {
+//                 serviceRequiredNote.style.display = "none";
+//             }, 5000);
+//     }
+
+
+// });
+
+
+
+
+
+
+
+// document.addEventListener("DOMContentLoaded", function () {
+//     const nextButton = document.getElementById("next");
+//     const selectService = document.getElementById("selectService");
+//     const requiredNote = document.querySelector("#service #requiredNote");
+//     const serviceSection = document.getElementById("service");
+//     const dateTimeSection = document.getElementById("dateTime");
+//     const basicDetailsSection = document.getElementById("basicDetails");
+//     const summarySection = document.getElementById("summary");
+//     const serviceDetails = document.querySelector(".service-details");
+
+//     // Initially hide the dateTime section and others
+//     dateTimeSection.style.display = "none";
+//     if (basicDetailsSection) basicDetailsSection.style.display = "none";
+//     if (summarySection) summarySection.style.display = "none";
+
+//     // Handle 'next' button click
+//     nextButton.addEventListener("click", function (e) {
+//         e.preventDefault();
+
+//         // Check if selectService was clicked (service not selected)
+//         if (!selectService.classList.contains('service-selected')) {
+//             // Show the required note message
+//             requiredNote.innerHTML = "Please select any service to book an appointment";
+//             requiredNote.style.color = "red";
+//             requiredNote.style.display = "block";
+
+//             // Hide the required note after 5 seconds
+//             setTimeout(() => {
+//                 requiredNote.style.display = "none";
+//             }, 5000);
+//         }
+//     });
+
+//     // Add event listener for selecting the service
+//     selectService.addEventListener("click", function () {
+//         // Add a custom class when the service is selected
+//         selectService.classList.add("service-selected");
+
+//         // Change the border color of the service-details class to #12D488
+//         serviceDetails.style.borderColor = "#12D488";
+
+//         // Show the dateTime section
+//         dateTimeSection.style.display = "block";
+
+//         // Hide other sections
+//         serviceSection.style.display = "none";
+//         if (basicDetailsSection) basicDetailsSection.style.display = "none";
+//         if (summarySection) summarySection.style.display = "none";
+//     });
+// });
 
 
 
