@@ -39,42 +39,52 @@ showSection('serviceItem', 'service');
 
 // ------------------------------functionality------------------------
 
-
-    // Select the serviceRequiredNote element
+document.addEventListener('DOMContentLoaded', function () {
+    const serviceNextBtn = document.getElementById('serviceNextBtn');
     const serviceRequiredNote = document.getElementById('serviceRequiredNote');
-    
-    // Set the innerHTML and the color to red
-    serviceRequiredNote.innerHTML = "Please select any service to book an appointment";
-    serviceRequiredNote.style.color = 'red';
+    const selectService = document.getElementById('selectService');
+    const dateItem = document.getElementById('dateItem');
+    const serviceItem = document.getElementById('serviceItem');
+    const dateTime = document.getElementById('dateTime');
+    const service = document.getElementById('service');
+    const basicDetails = document.getElementById('basicDetails');
+    const summary = document.getElementById('summary');
 
-    // Ensure the message is visible
-    serviceRequiredNote.style.display = 'block';
+    // Initially hide the serviceRequiredNote element
+    serviceRequiredNote.style.display = 'none';
 
-    // Hide the message automatically after 5 seconds (5000ms)
-    // setTimeout(function() {
-    //     serviceRequiredNote.style.display = 'none';
-    // }, 5000);
+    // Event listener for the 'serviceNextBtn' button
+    serviceNextBtn.addEventListener('click', function (event) {
+        event.preventDefault();
 
+        // Check if selectService has the border color #12D488
+        if (selectService.style.borderColor === 'rgb(18, 212, 136)') {
+            // Show dateTime and add 'active' class to dateItem, remove 'active' from serviceItem
+            dateItem.classList.add('active');
+            serviceItem.classList.remove('active');
 
+            // Show dateTime and hide other sections
+            dateTime.style.display = 'block';
+            service.style.display = 'none';
+            if (basicDetails) basicDetails.style.display = 'none';
+            if (summary) summary.style.display = 'none';
+        } else {
+            // Show the serviceRequiredNote element
+            serviceRequiredNote.style.display = 'block';
 
+            // Hide the serviceRequiredNote element after 5 seconds
+            setTimeout(function () {
+                serviceRequiredNote.style.display = 'none';
+            }, 3000);
+        }
+    });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    // Event listener for the 'selectService' element
+    selectService.addEventListener('click', function () {
+        // Change the border color of the selectService element
+        this.style.borderColor = '#12D488';
+    });
+});
 
 
 
@@ -100,12 +110,6 @@ showSection('serviceItem', 'service');
 
 
 // });
-
-
-
-
-
-
 
 // document.addEventListener("DOMContentLoaded", function () {
 //     const nextButton = document.getElementById("next");
@@ -160,22 +164,20 @@ showSection('serviceItem', 'service');
 
 
 
+    // // Select the serviceRequiredNote element
+    // const serviceRequiredNote = document.getElementById('serviceRequiredNote');
+    
+    // // Set the innerHTML and the color to red
+    // serviceRequiredNote.innerHTML = "Please select any service to book an appointment";
+    // serviceRequiredNote.style.color = 'red';
 
+    // // Ensure the message is visible
+    // serviceRequiredNote.style.display = 'block';
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    // // Hide the message automatically after 5 seconds (5000ms)
+    // // setTimeout(function() {
+    // //     serviceRequiredNote.style.display = 'none';
+    // // }, 5000);
 
 
 

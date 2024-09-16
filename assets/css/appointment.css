@@ -59,13 +59,12 @@ h5 {
   color: white;
   background-color: #12D488;
 }
-
-.service-details {
-  border-color: #b3b8b6 !important;
+#serviceRequiredNote, #dateTimeRequiredNote {
+  color: red
 }
-
 .next-btn .icon-link {
   background-color: #12D488;
+  cursor: pointer;
 }
 
 .icon-link>.bi {
