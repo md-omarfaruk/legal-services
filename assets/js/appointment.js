@@ -183,6 +183,66 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+// ------------------------------------Today-Next--------------------------------
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Function to handle the "Next" button click in the Basic Details section
+    document.getElementById('basicDetailsNextBtn').addEventListener('click', function(e) {
+        e.preventDefault(); // Prevent the default action (if any)
+
+        var telInput = document.getElementById('tel');
+        var requiredNote = document.getElementById('basicDetailsRequiredNote'); // Assuming this is the ID of the required note element
+
+        if (telInput.value.trim() === "") {
+            // Show the required note if the input is empty
+            requiredNote.style.display = 'block';
+        } else {
+            // Hide the required note if the input is not empty
+            requiredNote.style.display = 'none';
+
+            // Hide other sections and show the summary
+            document.getElementById('service').style.display = 'none';
+            document.getElementById('dateTime').style.display = 'none';
+            document.getElementById('basicDetails').style.display = 'none';
+            document.getElementById('summary').style.display = 'block';
+
+            // Add 'active' class to the summary item and remove from basic item
+            document.getElementById('summaryItem').classList.add('active');
+            document.getElementById('basicItem').classList.remove('active');
+        }
+    });
+
+    // Function to handle the "Go Back" button click in the Basic Details section
+    document.getElementById('basicDetailsGoBackBtn').addEventListener('click', function(e) {
+        e.preventDefault(); // Prevent the default action (if any)
+
+        // Show the Date & Time section and hide others
+        document.getElementById('service').style.display = 'none';
+        document.getElementById('dateTime').style.display = 'block';
+        document.getElementById('basicDetails').style.display = 'none';
+        document.getElementById('summary').style.display = 'none';
+
+        // Add 'active' class to the date item and remove from basic item
+        document.getElementById('dateItem').classList.add('active');
+        document.getElementById('basicItem').classList.remove('active');
+    });
+
+    // Function to handle the "Go Back" button click in the Summary section
+    document.getElementById('summaryGoBackBtn').addEventListener('click', function(e) {
+        e.preventDefault(); // Prevent the default action (if any)
+
+        // Show the Basic Details section and hide others
+        document.getElementById('service').style.display = 'none';
+        document.getElementById('dateTime').style.display = 'none';
+        document.getElementById('basicDetails').style.display = 'block';
+        document.getElementById('summary').style.display = 'none';
+
+        // Add 'active' class to the basic item and remove from summary item
+        document.getElementById('basicItem').classList.add('active');
+        document.getElementById('summaryItem').classList.remove('active');
+    });
+});
+
 
 
 

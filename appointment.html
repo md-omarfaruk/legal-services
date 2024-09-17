@@ -377,9 +377,10 @@
                                             placeholder="Enter Your Address">
                                     </div>
                                     <div class="mb-3">
-                                        <label for="tel" class="form-label">Cell Number</label>
+                                        <label for="tel" class="form-label">Cell Number<sup class="text-danger fs-6">*</sup></label>
                                         <input type="tel" class="form-control" id="tel"
-                                            placeholder="Enter Your Cell Number" required>
+                                            placeholder="Enter Your Cell Number">
+                                            <p id="required"><small class="text-danger">This field can not be blank</small></p>
                                     </div>
                                     <h6 class="ms-32">Consultation Fee Paid</h6>
                                     <div class="d-flex">
@@ -402,8 +403,8 @@
                                         </div>
                                         <div class="col">
                                             <label for="tel" class="form-label"></label>
-                                            <input type="tel" class="form-control" id="tel"
-                                                placeholder="Enter Referred Number" required>
+                                            <input type="tel" class="form-control" id="referredTel"
+                                                placeholder="Enter Referred Number">
                                         </div>
                                     </div>
                                 </div>
@@ -538,7 +539,7 @@
 
                             <div class="row rounded-2 bg-body-secondary mt-5 p-4">
                                 <div class="col go-back">
-                                    <a class="icon-link p-2 text-black" id="goBack" href="#">
+                                    <a class="icon-link p-2 text-black" id="summaryGoBack" href="#">
                                         <i class="bi bi-arrow-left"></i>
                                         <strong class="date-time text-secondary">Go Back</strong>
                                     </a>
