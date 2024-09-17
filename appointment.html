@@ -258,7 +258,7 @@
                         <!-- ---------------------------Service-Part-End------------------------ -->
                         <!-- -------------------------------Date-&-Time-Part-Start------------------------------ -->
                         <div class="date-time" id="dateTime">
-                        <h6 id="requiredNote my-3"></h6>
+                            <h6 class="my-3" id="dateTimeRequiredNote">Please select a time slot to proceed with the booking.</h6>
                             <h4>Date & Time</h4>
                             <div class="row mt-3">
                                 <div class="col-12 calendar-body text-center">
@@ -270,47 +270,47 @@
                                 </div>
                                 <div class="col-12 p-3 time-slot">
                                     <h5 class="mb-4">Time Slot</h5>
-                                    <h6 class="slot">Morning</h6>
+                                    <h6 class="slot-period">Morning</h6>
                                     <div class="times row mb-4 justify-content-between">
-                                        <div class="col-5 mb-2 py-2 px-3 border rounded-2 slot">
+                                        <div class="col-5 mb-2 py-2 px-3 rounded-2 slot">
                                             <h5>10:35 am - 11:05 am</h5>
                                             <h6>0 Slots left</h6>
                                         </div>
-                                        <div class="col-5 mb-2 py-2 px-3 border rounded-2 slot">
+                                        <div class="col-5 mb-2 py-2 px-3 rounded-2 slot">
                                             <h5>11:35 am - 12:05 am</h5>
                                             <h6>0 Slots left</h6>
                                         </div>
                                     </div>
-                                    <h6 class="slot">Afternoon</h6>
+                                    <h6 class="slot-period">Afternoon</h6>
                                     <div class="times row mb-4 justify-content-between">
-                                        <div class="col-5 mb-2 py-2 px-3 border rounded-2 slot">
+                                        <div class="col-5 mb-2 py-2 px-3 rounded-2 slot">
                                             <h5>12:05 am - 12:35 am</h5>
                                             <h6>0 Slots left</h6>
                                         </div>
-                                        <div class="col-5 mb-2 py-2 px-3 border rounded-2 slot">
+                                        <div class="col-5 mb-2 py-2 px-3 rounded-2 slot">
                                             <h5>12:35 am - 01:05 am</h5>
                                             <h6>0 Slots left</h6>
                                         </div>
-                                        <div class="col-5 mb-2 py-2 px-3 border rounded-2 slot">
+                                        <div class="col-5 mb-2 py-2 px-3 rounded-2 slot">
                                             <h5>01:05 am - 01:35 am</h5>
                                             <h6>0 Slots left</h6>
                                         </div>
-                                        <div class="col-5 mb-2 py-2 px-3 border rounded-2 slot">
+                                        <div class="col-5 mb-2 py-2 px-3 rounded-2 slot">
                                             <h5>01:35 am - 02:05 am</h5>
                                             <h6>0 Slots left</h6>
                                         </div>
-                                        <div class="col-5 mb-2 py-2 px-3 border rounded-2 slot">
+                                        <div class="col-5 mb-2 py-2 px-3 rounded-2 slot">
                                             <h5>02:05 am - 02:35 am</h5>
                                             <h6>0 Slots left</h6>
                                         </div>
-                                        <div class="col-5 mb-2 py-2 px-3 border rounded-2 slot">
+                                        <div class="col-5 mb-2 py-2 px-3 rounded-2 slot">
                                             <h5>02:35 am - 03:05 am</h5>
                                             <h6>0 Slots left</h6>
                                         </div>
                                     </div>
-                                    <h6 class="slot">Morning</h6>
+                                    <h6 class="slot-period">Evening</h6>
                                     <div class="times row mb-4 justify-content-between">
-                                        <div class="col-5 mb-2 py-2 px-3 border rounded-2 slot">
+                                        <div class="col-5 mb-2 py-2 px-3 rounded-2 slot">
                                             <h5>03:05 am - 03:35 am</h5>
                                             <h6>0 Slots left</h6>
                                         </div>
@@ -319,13 +319,13 @@
                             </div>
                             <div class="row rounded-2 bg-body-secondary mt-5 p-4">
                                 <div class="col go-back">
-                                    <a class="icon-link p-2 text-black" id="goBack" href="#">
+                                    <a class="icon-link p-2 text-black" id="dateTimeGoBackBtn" href="#">
                                         <i class="bi bi-arrow-left"></i>
                                         <strong class="date-time text-secondary">Go Back</strong>
                                     </a>
                                 </div>
                                 <div class="col next-btn text-md-end">
-                                    <a class="icon-link p-2 text-white rounded-3" href="#">
+                                    <a class="icon-link p-2 text-white rounded-3" id="dateTimeNextBtn" href="#">
                                         Next: <strong class="date-time">Basic Details</strong>
                                         <i class="bi bi-arrow-right"></i>
                                     </a>
@@ -381,10 +381,11 @@
                                         <input type="tel" class="form-control" id="tel"
                                             placeholder="Enter Your Cell Number" required>
                                     </div>
-                                    <h6 class="ms-32">Consultation Free Paid</h6>
+                                    <h6 class="ms-32">Consultation Fee Paid</h6>
+                                    <div class="d-flex">
                                     <div class="form-check ms-2">
                                         <input type="radio" class="form-check-input" id="radio1" name="optradio"
-                                            value="option1" checked>Yes
+                                            value="option1">Yes
                                         <label class="form-check-label" for="radio1"></label>
                                     </div>
                                     <div class="form-check ms-2">
@@ -392,6 +393,7 @@
                                             value="option2">No
                                         <label class="form-check-label" for="radio2"></label>
                                     </div>
+                                </div>
                                     <div class="row">
                                         <div class="col">
                                             <label for="personName"></label>
@@ -408,13 +410,13 @@
                             </div>
                             <div class="row rounded-2 bg-body-secondary mt-5 p-4">
                                 <div class="col go-back">
-                                    <a class="icon-link p-2 text-black" id="goBack" href="#">
+                                    <a class="icon-link p-2 text-black" id="basicDetailsGoBackBtn" href="#">
                                         <i class="bi bi-arrow-left"></i>
                                         <strong class="date-time text-secondary">Go Back</strong>
                                     </a>
                                 </div>
                                 <div class="col next-btn text-md-end">
-                                    <a class="icon-link p-2 text-white rounded-3" id="next" href="#">
+                                    <a class="icon-link p-2 text-white rounded-3" id="basicDetailsNextBtn" href="#">
                                         Next: <strong class="date-time">Summary</strong>
                                         <i class="bi bi-arrow-right"></i>
                                     </a>

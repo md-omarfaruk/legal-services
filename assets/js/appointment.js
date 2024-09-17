@@ -49,9 +49,13 @@ document.addEventListener('DOMContentLoaded', function () {
     const service = document.getElementById('service');
     const basicDetails = document.getElementById('basicDetails');
     const summary = document.getElementById('summary');
+    const dateTimeGoBackBtn = document.getElementById('dateTimeGoBackBtn');
 
     // Initially hide the serviceRequiredNote element
     serviceRequiredNote.style.display = 'none';
+    dateTime.style.display = 'none';
+    if (basicDetails) basicDetails.style.display = 'none';
+    if (summary) summary.style.display = 'none';
 
     // Event listener for the 'serviceNextBtn' button
     serviceNextBtn.addEventListener('click', function (event) {
@@ -75,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function () {
             // Hide the serviceRequiredNote element after 5 seconds
             setTimeout(function () {
                 serviceRequiredNote.style.display = 'none';
-            }, 3000);
+            }, 5000);
         }
     });
 
@@ -84,7 +88,152 @@ document.addEventListener('DOMContentLoaded', function () {
         // Change the border color of the selectService element
         this.style.borderColor = '#12D488';
     });
+
+    // Event listener for the 'dateTimeGoBackBtn' button
+    dateTimeGoBackBtn.addEventListener('click', function (event) {
+        event.preventDefault();
+
+        // Show service and add 'active' class to serviceItem, remove 'active' from dateItem
+        service.style.display = 'block';
+        dateTime.style.display = 'none';
+
+        serviceItem.classList.add('active');
+        dateItem.classList.remove('active');
+    });
 });
+
+
+
+// ----------------------------------------------------Today-------------------------
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const dateTimeRequiredNote = document.getElementById("dateTimeRequiredNote");
+    const dateTimeNextBtn = document.getElementById("dateTimeNextBtn");
+    const basicItem = document.getElementById("basicItem");
+    const dateItem = document.getElementById("dateItem");
+    const service = document.getElementById("service");
+    const dateTime = document.getElementById("dateTime");
+    const basicDetails = document.getElementById("basicDetails");
+    const summary = document.getElementById("summary");
+    const basicDetailsGoBackBtn = document.getElementById("basicDetailsGoBackBtn");
+    const slots = document.querySelectorAll(".slot");
+
+    // Initially hide dateTimeRequiredNote
+    dateTimeRequiredNote.style.display = "none";
+
+    // Handle the click event on the "Next" button for Date & Time section
+    dateTimeNextBtn.addEventListener("click", function() {
+        let isSlotSelected = false;
+
+        // Check if any slot has the selected color (#12D488)
+        slots.forEach(function(slot) {
+            if (slot.style.borderColor === "rgb(18, 212, 136)") {
+                isSlotSelected = true;
+            }
+        });
+
+        // Show the note if no slot is selected
+        if (!isSlotSelected) {
+            dateTimeRequiredNote.style.display = "block";
+            setTimeout(function() {
+                dateTimeRequiredNote.style.display = "none";
+            }, 3000); // Hide the note after 3 seconds
+        }
+
+        // If a slot is selected, proceed to Basic Details
+        if (isSlotSelected) {
+            basicItem.classList.add("active");
+            dateItem.classList.remove("active");
+
+            // Hide other sections and show Basic Details section
+            service.style.display = "none";
+            dateTime.style.display = "none";
+            basicDetails.style.display = "block";
+            summary.style.display = "none";
+        }
+    });
+
+    // Handle slot selection to change border color
+    slots.forEach(function(slot) {
+        slot.addEventListener("click", function() {
+            // Reset the border color for all slots
+            slots.forEach(function(s) {
+                s.style.borderColor = ""; // Reset color
+            });
+
+            // Change the border color of the selected slot
+            this.style.borderColor = "#12D488";
+        });
+    });
+
+    // Handle the Go Back button click in the Basic Details section
+    basicDetailsGoBackBtn.addEventListener("click", function() {
+        // Show the Date & Time section again
+        dateTime.style.display = "block";
+        service.style.display = "none";
+        basicDetails.style.display = "none";
+        summary.style.display = "none";
+
+        // Change active class from Basic Details to Date & Time
+        dateItem.classList.add("active");
+        basicItem.classList.remove("active");
+    });
+});
+
+
+
+
+
+
+
+// document.addEventListener('DOMContentLoaded', function () {
+//     const serviceNextBtn = document.getElementById('serviceNextBtn');
+//     const serviceRequiredNote = document.getElementById('serviceRequiredNote');
+//     const selectService = document.getElementById('selectService');
+//     const dateItem = document.getElementById('dateItem');
+//     const serviceItem = document.getElementById('serviceItem');
+//     const dateTime = document.getElementById('dateTime');
+//     const service = document.getElementById('service');
+//     const basicDetails = document.getElementById('basicDetails');
+//     const summary = document.getElementById('summary');
+
+//     // Initially hide the serviceRequiredNote element
+//     serviceRequiredNote.style.display = 'none';
+
+//     // Event listener for the 'serviceNextBtn' button
+//     serviceNextBtn.addEventListener('click', function (event) {
+//         event.preventDefault();
+
+//         // Check if selectService has the border color #12D488
+//         if (selectService.style.borderColor === 'rgb(18, 212, 136)') {
+//             // Show dateTime and add 'active' class to dateItem, remove 'active' from serviceItem
+//             dateItem.classList.add('active');
+//             serviceItem.classList.remove('active');
+
+//             // Show dateTime and hide other sections
+//             dateTime.style.display = 'block';
+//             service.style.display = 'none';
+//             if (basicDetails) basicDetails.style.display = 'none';
+//             if (summary) summary.style.display = 'none';
+//         } else {
+//             // Show the serviceRequiredNote element
+//             serviceRequiredNote.style.display = 'block';
+
+//             // Hide the serviceRequiredNote element after 5 seconds
+//             setTimeout(function () {
+//                 serviceRequiredNote.style.display = 'none';
+//             }, 3000);
+//         }
+//     });
+
+//     // Event listener for the 'selectService' element
+//     selectService.addEventListener('click', function () {
+//         // Change the border color of the selectService element
+//         this.style.borderColor = '#12D488';
+//     });
+// });
 
 
 

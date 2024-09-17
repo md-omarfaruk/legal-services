@@ -104,7 +104,9 @@ input[type="submit" i] {
   border: none;
   border-radius: 5px;
 }
-
+input#radio1,input#radio2 {
+  border-color: #12D488;
+}
 #select-date {
   padding: 8px 26px;
   color: #535D71;
@@ -112,10 +114,15 @@ input[type="submit" i] {
   border-radius: 5px;
 }
 
-h6.slot {
+h6.slot-period {
   color: #12D488;
+  font-weight: 900;
 }
-
+.slot{
+  cursor: pointer;
+  border: 1px solid;
+  border-color: #b3b8b6;
+}
 .basic-details h4 {
   color: #202c45;
 }
